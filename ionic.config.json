@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "ezumrah",
+=======
+  "name": "firstapp",
+>>>>>>> de6c535c707d667f95a2f5db7013f14cee80b4b3
   "app_id": "",
   "type": "ionic-angular",
   "integrations": {
