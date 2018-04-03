@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      EzUmrah Apps
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list [virtualScroll]="people" approxItemHeight="50px">
+		<ion-item *virtualItem="#person">
+			<ion-avatar item-left>
+				<ion-img [src]="person.picture" width="48" height="48"></ion-img>
+			</ion-avatar>
+			<h2>{{person.name}}</h2>
+		</ion-item>
+	</ion-list>
+
+ <ion-infinite-scroll (infinite)="doInfinite($event)">
+   <ion-infinite-scroll-content></ion-infinite-scroll-content>
+ </ion-infinite-scroll>
+
 </ion-content>
