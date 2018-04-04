@@ -1,3 +1,0 @@
-# EzUmrahIonic
-# PERCOBAAN SEMATA
-# TRIAL N ERROR
